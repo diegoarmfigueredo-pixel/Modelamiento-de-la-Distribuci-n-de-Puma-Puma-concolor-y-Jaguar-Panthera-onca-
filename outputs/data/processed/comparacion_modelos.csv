@@ -1,0 +1,5 @@
+,accuracy,auc,f1,precision,recall,mcc,tss
+Logistic Regression,0.68,0.59,0.0,0.0,0.0,0.0,0.0
+Random Forest,0.875,0.929,0.805,0.805,0.805,0.713,0.713
+Gradient Boosting,0.859,0.913,0.763,0.829,0.707,0.668,0.638
+Árbol de Decisión,0.875,0.876,0.818,0.766,0.878,0.728,0.752
