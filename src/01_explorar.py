@@ -43,9 +43,7 @@ print("las dimensiones del nuevo data saet seleccionanod columnas es : ",df.shap
 print(df.isnull().sum()) # Verificar valores nulos en cada columna
 # despues de verificar los valores nulos, se eliminan las columnas con muchos valores nulos, y se repite el proceso hasta tener un buen df para el analisis.
 
-# Opcion 1, Como decimal latitude y decimal longitude tienen solo 9 valores nulos, los eliminamos con un dropna
-# df = df.dropna(subset=['decimalLatitude', 'decimalLongitude'])
-# print("Dimensiones del Dataframe después de eliminar filas con valores nulos en decimalLatitude y decimalLongitude: ", df.shape)
+
 
 
 # Opcion 2. evaluar si en los datos nulos de latitud y longitud hay información de especies
