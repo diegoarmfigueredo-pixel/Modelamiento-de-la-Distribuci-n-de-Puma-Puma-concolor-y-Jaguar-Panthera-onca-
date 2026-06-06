@@ -32,6 +32,8 @@ Se trabajan dos objetivos concretos:
 
 ## Dataset
 
+- **Fuente:Descarga directa: https://www.gbif.org
+Búsqueda: species = "Puma concolor" OR "Panthera onca", country = Colombia, year = 2011.
 - **Fuente:** GBIF (Global Biodiversity Information Facility) —
   plataforma internacional de datos de biodiversidad de acceso libre.
 - **Registros:** 203 observaciones válidas (212 originales, 9 eliminadas
