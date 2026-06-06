@@ -137,6 +137,7 @@ Se aplicaron tres metodologías de preprocesamiento:
 ### Comparación de modelos
 
 | Modelo	         | Accuracy | AUC	   | F1	   | Precision	| Recall	| MCC	   | TSS   |
+|---|---|---|---|---|---|---|---|
 | Reg. Logística	| 0.771	  | 0.601	| 0.000	| 0.000	   | 0.000	| 0.000	| 0.000 |
 | Random Forest	| 0.906	  | 0.919	| 0.795	| 0.795	   | 0.795	| 0.734	| 0.734 |
 | Grad. Boosting	| 0.871	  | 0.921	| 0.656	| 0.840	   | 0.538	| 0.603	| 0.508 |
