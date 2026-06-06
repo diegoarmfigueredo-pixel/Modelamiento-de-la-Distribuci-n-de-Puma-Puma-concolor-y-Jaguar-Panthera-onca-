@@ -1,0 +1,20 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Datos
+data/raw/
+
+# Archivos GIS
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/

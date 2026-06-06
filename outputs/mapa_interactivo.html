@@ -1,0 +1,4423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3029924113fa1377c1685f1a9e28c1ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3029924113fa1377c1685f1a9e28c1ad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3029924113fa1377c1685f1a9e28c1ad = L.map(
+                "map_3029924113fa1377c1685f1a9e28c1ad",
+                {
+                    center: [4.0, -72.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bdb28b7ff77d650081536890dcdcda5a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bdb28b7ff77d650081536890dcdcda5a.addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var circle_marker_5eb63738bc9c7a314ace1401f142b0e3 = L.circleMarker(
+                [3.537326, -72.440003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_5eb63738bc9c7a314ace1401f142b0e3.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Castro, Hato Palmeras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_15a0b68a353b8976795cebaf449d729a = L.circleMarker(
+                [4.029, -71.946],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_15a0b68a353b8976795cebaf449d729a.bindTooltip(
+                `<div>
+                     Puma concolor - Gabanes, Hacienda Gabanes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d41b1b070aa2067d4fd4d7ad7fc48c8d = L.circleMarker(
+                [3.537326, -72.440003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_d41b1b070aa2067d4fd4d7ad7fc48c8d.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Castro, Hato Palmeras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_485a4a927ce71f47bb6378e721db9f30 = L.circleMarker(
+                [3.531515, -73.402054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_485a4a927ce71f47bb6378e721db9f30.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b111de98a6446c2899002644eb19bb2 = L.circleMarker(
+                [4.076992, -72.820701],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_0b111de98a6446c2899002644eb19bb2.bindTooltip(
+                `<div>
+                     Puma concolor - Yurimena, Finca Omar Hernandez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_099491a633fb9af28cdcaa13bba13f7f = L.circleMarker(
+                [3.624423, -73.149157],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_099491a633fb9af28cdcaa13bba13f7f.bindTooltip(
+                `<div>
+                     Puma concolor - El Consuelo, Hacienda Nazareth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c731c06f426ef1ec08bcecd2dd35881 = L.circleMarker(
+                [3.934555, -72.337708],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4c731c06f426ef1ec08bcecd2dd35881.bindTooltip(
+                `<div>
+                     Puma concolor - Serranía, Hacienda Murujuy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c33f43f46ce512f88548931aa9d76b38 = L.circleMarker(
+                [3.810341, -72.608264],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_c33f43f46ce512f88548931aa9d76b38.bindTooltip(
+                `<div>
+                     Puma concolor - Serranía, Hacienda Santa Rita
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0324887456071006a2054994ff229847 = L.circleMarker(
+                [4.163745, -72.358803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_0324887456071006a2054994ff229847.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda Cachicamo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb5cfd28d0f766345e0933ee81940da8 = L.circleMarker(
+                [4.167199, -73.69354],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_cb5cfd28d0f766345e0933ee81940da8.bindTooltip(
+                `<div>
+                     Puma concolor - Buenavista, Hacienda Rosalinda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4d6eba33e2ba7a93a6dfe32b83b2d8b = L.circleMarker(
+                [3.977191, -72.693092],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b4d6eba33e2ba7a93a6dfe32b83b2d8b.bindTooltip(
+                `<div>
+                     Puma concolor - Yucao, Hacienda Almagro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4116bdd5aec49da3f03f305023c431fe = L.circleMarker(
+                [3.561544, -72.672695],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4116bdd5aec49da3f03f305023c431fe.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Castro, Hacienda El Diamante
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17c86ba47d54e1f07f7ea99607a7e1e8 = L.circleMarker(
+                [3.536348, -73.425311],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_17c86ba47d54e1f07f7ea99607a7e1e8.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda Rey Zamuro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8bbff414087728753771f476ae01ee2 = L.circleMarker(
+                [3.91304, -72.661679],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b8bbff414087728753771f476ae01ee2.bindTooltip(
+                `<div>
+                     Puma concolor - Serranía, Hacienda La Esmeralda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6b928bf837744863ec164ef7cd3bcb5 = L.circleMarker(
+                [4.15, -73.6],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_e6b928bf837744863ec164ef7cd3bcb5.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda Santa Maria Alta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c82e62de8c94dbeb6cb5b5d9bc4b454d = L.circleMarker(
+                [3.27006, -72.903524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_c82e62de8c94dbeb6cb5b5d9bc4b454d.bindTooltip(
+                `<div>
+                     Puma concolor - Brisas de Manacacias, Finca Tailandia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3cb1c111d07ed06f24c5617eebcbeeaa = L.circleMarker(
+                [3.537326, -72.440003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_3cb1c111d07ed06f24c5617eebcbeeaa.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Castro, Hato Palmeras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47b8384f9109ed1ef30f931bd33d9c6f = L.circleMarker(
+                [4.055088, -72.885436],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_47b8384f9109ed1ef30f931bd33d9c6f.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Hacienda Villa Sonia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b344d1108c857d560be9dfb5fd0c6d67 = L.circleMarker(
+                [4.03722, -72.162993],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b344d1108c857d560be9dfb5fd0c6d67.bindTooltip(
+                `<div>
+                     Puma concolor - Serranía, Hacienda Mururito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f96381afc003a7c37cfc44c2fcdab9bb = L.circleMarker(
+                [4.066542, -72.302238],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f96381afc003a7c37cfc44c2fcdab9bb.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda Guaracu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1713d31b3ebca07df193a6828d90b9f0 = L.circleMarker(
+                [3.857307, -72.726225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_1713d31b3ebca07df193a6828d90b9f0.bindTooltip(
+                `<div>
+                     Puma concolor - La Bodega, Caserio La Bodega
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f531d316984a752250844110e2702c09 = L.circleMarker(
+                [3.80518, -72.721431],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f531d316984a752250844110e2702c09.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Finca Rubén Calderón
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3d78f9b411c84a688e281ba2ad7c92b = L.circleMarker(
+                [4.190973, -72.431705],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f3d78f9b411c84a688e281ba2ad7c92b.bindTooltip(
+                `<div>
+                     Puma concolor - La Sandrita, Hacienda Berali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94d86ed9ba5bb00fde28d2ec255ca2da = L.circleMarker(
+                [3.775014, -72.513023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_94d86ed9ba5bb00fde28d2ec255ca2da.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Calima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ba0add5ee1b73ffc9b21713c0a619ad = L.circleMarker(
+                [3.775014, -72.513023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_3ba0add5ee1b73ffc9b21713c0a619ad.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Siribana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4083a5676f69b007fcae33ad9231d7b1 = L.circleMarker(
+                [4.05139, -72.899301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4083a5676f69b007fcae33ad9231d7b1.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Hacienda Tierra Grata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5eef4f8f54b147a8ed1f8e9439c01b48 = L.circleMarker(
+                [4.020962, -72.943035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_5eef4f8f54b147a8ed1f8e9439c01b48.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Rancho Chileno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd0555e0512d19bb1b2ceca28ecb131c = L.circleMarker(
+                [4.119642, -72.688989],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_cd0555e0512d19bb1b2ceca28ecb131c.bindTooltip(
+                `<div>
+                     Puma concolor - La Ema, Hacienda Caracoli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_468233ac885803131fadd4d9aeef3f43 = L.circleMarker(
+                [3.585992, -73.340756],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_468233ac885803131fadd4d9aeef3f43.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda La Guardiana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac3448de777ceec0c0b70196fc16cfea = L.circleMarker(
+                [3.470651, -72.544368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_ac3448de777ceec0c0b70196fc16cfea.bindTooltip(
+                `<div>
+                     Puma concolor - Siberia, Hacienda Mararay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac5333284933f231829d76555abda664 = L.circleMarker(
+                [3.503398, -73.369891],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_ac5333284933f231829d76555abda664.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda Cambaos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6f038cd6e7be12170cd841ee23a9cc1 = L.circleMarker(
+                [3.507912, -73.355124],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_a6f038cd6e7be12170cd841ee23a9cc1.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda Rancho Triste
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4020652d82961f1a88d61de7136c68da = L.circleMarker(
+                [3.924213, -72.506069],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4020652d82961f1a88d61de7136c68da.bindTooltip(
+                `<div>
+                     Puma concolor - Serranía, Hacienda Sorocaima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cc18e551bea9b427ed77543a0084f30 = L.circleMarker(
+                [4.096175, -72.820388],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_2cc18e551bea9b427ed77543a0084f30.bindTooltip(
+                `<div>
+                     Puma concolor - Yurimena, Finca Esperanza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b90fb1935d5b92da7d8aa1f930dd2ce1 = L.circleMarker(
+                [3.531515, -73.402054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b90fb1935d5b92da7d8aa1f930dd2ce1.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8771da589217a9066245f8a7684ad798 = L.circleMarker(
+                [3.531515, -73.402054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8771da589217a9066245f8a7684ad798.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_939de4be77c179fdddf4f9faf6fbced2 = L.circleMarker(
+                [3.512539, -72.798202],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_939de4be77c179fdddf4f9faf6fbced2.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Castro, Hacienda La Palmita
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a948609559f35c55e4de4cffec0e24df = L.circleMarker(
+                [3.452407, -72.511963],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_a948609559f35c55e4de4cffec0e24df.bindTooltip(
+                `<div>
+                     Puma concolor - Siberia, Hacienda Sibira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f74fcaef8c79f22a2c71268d49387b95 = L.circleMarker(
+                [4.15745, -73.699844],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f74fcaef8c79f22a2c71268d49387b95.bindTooltip(
+                `<div>
+                     Puma concolor - Buenavista, Finca Marcos Garcia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2500ba53fb1712897d562d421026058 = L.circleMarker(
+                [3.994097, -72.846443],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f2500ba53fb1712897d562d421026058.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Finca Buenos Aires
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99b91abe9f019ae24608c1cd0a54da56 = L.circleMarker(
+                [4.167054, -72.335192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_99b91abe9f019ae24608c1cd0a54da56.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda San Jose
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40e1bcde55adf6d83a68cba58e030ada = L.circleMarker(
+                [3.824689, -72.542453],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_40e1bcde55adf6d83a68cba58e030ada.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda El Prado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cc519cb86d94f495c297e039eff2717 = L.circleMarker(
+                [3.745701, -72.429626],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_2cc519cb86d94f495c297e039eff2717.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Lomalinda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6c13a67993936a7f86c413a8f4ffe232 = L.circleMarker(
+                [4.167054, -72.335192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_6c13a67993936a7f86c413a8f4ffe232.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda San Jose
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e2be288b1536043ea6b40c2e3af73b3 = L.circleMarker(
+                [3.755974, -72.477901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_3e2be288b1536043ea6b40c2e3af73b3.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Canaguay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91117f718d29c31179fbae7bb1e3445d = L.circleMarker(
+                [3.824689, -72.542453],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_91117f718d29c31179fbae7bb1e3445d.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda El Prado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_777fc6c0db40c295023e71847ded3df6 = L.circleMarker(
+                [4.0204, -72.942496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_777fc6c0db40c295023e71847ded3df6.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Rancho Chileno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a77aece5bba5c8fc22cb4c0066fedcc = L.circleMarker(
+                [3.705405, -72.418407],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_1a77aece5bba5c8fc22cb4c0066fedcc.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda EL Zorro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d51277d4367372fbac67face2129231 = L.circleMarker(
+                [4.044013, -72.885411],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_3d51277d4367372fbac67face2129231.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, La Veronica
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7974b4ae0c56d99a2740ca36c762095a = L.circleMarker(
+                [3.820359, -72.977099],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_7974b4ae0c56d99a2740ca36c762095a.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda La Voragine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e0187f4a2673eeba5b8b4634b7073e6 = L.circleMarker(
+                [4.017353, -72.945979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4e0187f4a2673eeba5b8b4634b7073e6.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Santo Domingo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25b3e042c92f48f5f9610e50a2ef94e0 = L.circleMarker(
+                [4.027546, -72.863109],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_25b3e042c92f48f5f9610e50a2ef94e0.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Hacienda los avestruces
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e92f4173544de15b9ecfa58c24de4382 = L.circleMarker(
+                [3.824689, -72.542453],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_e92f4173544de15b9ecfa58c24de4382.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda El Prado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe9145979525b327cb69bdb1e4402324 = L.circleMarker(
+                [4.135297, -72.289803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_fe9145979525b327cb69bdb1e4402324.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda La Lorena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f1235b7c90a374dce71246e3e39c2e0 = L.circleMarker(
+                [4.007995, -72.913772],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_3f1235b7c90a374dce71246e3e39c2e0.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Santo Domingo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5345ab2299213abf0b050b9581cca484 = L.circleMarker(
+                [3.858002, -72.504239],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_5345ab2299213abf0b050b9581cca484.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Caño Los Cuatro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f22d2058cb7f3ef3ffe0b0b3233f6592 = L.circleMarker(
+                [4.164615, -72.343652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f22d2058cb7f3ef3ffe0b0b3233f6592.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda Santa Ana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97ca6a413dc627aacfe527a656e16a7e = L.circleMarker(
+                [3.841915, -72.63201],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_97ca6a413dc627aacfe527a656e16a7e.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda Las Camelias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a10d1b8c532b4adb7624c1f9fda45c94 = L.circleMarker(
+                [3.714567, -72.417868],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_a10d1b8c532b4adb7624c1f9fda45c94.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda La Maravilla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e99ed33482609b0b71a933aee193c3b4 = L.circleMarker(
+                [4.032437, -72.936596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_e99ed33482609b0b71a933aee193c3b4.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Rancho Chileno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74c5ea0bfadd57d0d653e22546d0e332 = L.circleMarker(
+                [4.025083, -72.885802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_74c5ea0bfadd57d0d653e22546d0e332.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Finca Las Acacias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c67ea46e20f8e2819e2a308f32d10469 = L.circleMarker(
+                [4.114151, -71.989724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_c67ea46e20f8e2819e2a308f32d10469.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cristalina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d805841a21e55b7444cc08534535aad4 = L.circleMarker(
+                [4.633628, -71.562081],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_d805841a21e55b7444cc08534535aad4.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda La Estación
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47a083f694b94dc424e52db9bf0dbc46 = L.circleMarker(
+                [3.621519, -73.900875],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_47a083f694b94dc424e52db9bf0dbc46.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f15ba8d16e8c244b616f03e15b0d3d0 = L.circleMarker(
+                [4.563219, -71.655472],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_9f15ba8d16e8c244b616f03e15b0d3d0.bindTooltip(
+                `<div>
+                     Puma concolor - San Pedro de Arimena, Hacienda San Sebastian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcb2443e79af24eba6c420adb1fe1cac = L.circleMarker(
+                [4.606237, -71.620804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_fcb2443e79af24eba6c420adb1fe1cac.bindTooltip(
+                `<div>
+                     Puma concolor - San Pedro de Arimena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e48d7c9f4d5f91df1f712d86646331c6 = L.circleMarker(
+                [4.606237, -71.620804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_e48d7c9f4d5f91df1f712d86646331c6.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Vereda San Pedro de Arimena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b594bae2e144790b5bd151a2f90237ef = L.circleMarker(
+                [4.17334, -72.075761],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b594bae2e144790b5bd151a2f90237ef.bindTooltip(
+                `<div>
+                     Puma concolor - Villanueva, Finca Unillanos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_772129f029ec927f35e42359e9e70db0 = L.circleMarker(
+                [3.686575, -72.282084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_772129f029ec927f35e42359e9e70db0.bindTooltip(
+                `<div>
+                     Puma concolor - El Tigre, Finca Luis Martinez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52f94082ae23a8698c33901373d451c6 = L.circleMarker(
+                [4.633628, -71.562081],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_52f94082ae23a8698c33901373d451c6.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda La Estación
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e46b8eef35f9425d90d0a0294bb4e1f9 = L.circleMarker(
+                [4.369577, -72.04922],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_e46b8eef35f9425d90d0a0294bb4e1f9.bindTooltip(
+                `<div>
+                     Puma concolor - Neblinas, Hacienda Las Delicias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27fefc691fbec0091a98114d648f16c5 = L.circleMarker(
+                [3.615064, -73.89639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_27fefc691fbec0091a98114d648f16c5.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1476fa9ef79986d58ebe042b5fb1c2ba = L.circleMarker(
+                [4.543956, -71.549171],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_1476fa9ef79986d58ebe042b5fb1c2ba.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda Guadalajara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe4b8beb64002c06af859f0ccbaf7d91 = L.circleMarker(
+                [4.476988, -71.711632],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_fe4b8beb64002c06af859f0ccbaf7d91.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda EL Espejo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00a29649a8619f385ec1bc18666393a0 = L.circleMarker(
+                [3.570986, -73.457907],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_00a29649a8619f385ec1bc18666393a0.bindTooltip(
+                `<div>
+                     Puma concolor - La Novilla, Hacienda Pampas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a0e95ca1c22b2cbf8c97b9da7f32450 = L.circleMarker(
+                [4.09235, -72.803689],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_1a0e95ca1c22b2cbf8c97b9da7f32450.bindTooltip(
+                `<div>
+                     Puma concolor - Yurimena, Hacienda Bufalito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b35d50af139cb086153aa520298bf7f = L.circleMarker(
+                [3.50019, -72.450278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8b35d50af139cb086153aa520298bf7f.bindTooltip(
+                `<div>
+                     Puma concolor - Siberia, Hacienda Siberia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_098c77d679907b4c0996656d861ac2df = L.circleMarker(
+                [4.171104, -73.654799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_098c77d679907b4c0996656d861ac2df.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda Bavaria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9f06e5f13ca3099ace3b123b79f22ee8 = L.circleMarker(
+                [3.512539, -72.798202],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_9f06e5f13ca3099ace3b123b79f22ee8.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Castro, Hacienda La Palmita
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d01ac6579912a3f2ac6935057b5901c5 = L.circleMarker(
+                [4.111591, -72.827936],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_d01ac6579912a3f2ac6935057b5901c5.bindTooltip(
+                `<div>
+                     Puma concolor - Yurimena, Vereda Menegua
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_830e77a26cc585be76490cfa05b7725a = L.circleMarker(
+                [3.679461, -73.637869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_830e77a26cc585be76490cfa05b7725a.bindTooltip(
+                `<div>
+                     Puma concolor - La Unión, Hacienda San Camilo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89c58c5edb19c4d4c3483e1664dca277 = L.circleMarker(
+                [3.369002, -72.627905],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_89c58c5edb19c4d4c3483e1664dca277.bindTooltip(
+                `<div>
+                     Puma concolor - Siberia, Hacienda La Esperanza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66c904bc5ec35d8f7223095c6d0c7335 = L.circleMarker(
+                [3.531515, -73.402054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_66c904bc5ec35d8f7223095c6d0c7335.bindTooltip(
+                `<div>
+                     Puma concolor - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40f05788a641f1aa88ae57ff814032de = L.circleMarker(
+                [3.739762, -73.662517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_40f05788a641f1aa88ae57ff814032de.bindTooltip(
+                `<div>
+                     Puma concolor - Altamira, Hacienda Altamira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c22aa2c95aa87594c7bf8decae77325 = L.circleMarker(
+                [3.69696, -73.153653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8c22aa2c95aa87594c7bf8decae77325.bindTooltip(
+                `<div>
+                     Puma concolor - Brisas del Camoa, Hacienda Santa Teresa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21f3a38e84475c3948f48176a7b8a4b7 = L.circleMarker(
+                [4.010608, -72.689038],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_21f3a38e84475c3948f48176a7b8a4b7.bindTooltip(
+                `<div>
+                     Puma concolor - Yucao, Finca La Frontera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87c1412b0030172d2c438ebda831b49f = L.circleMarker(
+                [4.111591, -72.827936],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_87c1412b0030172d2c438ebda831b49f.bindTooltip(
+                `<div>
+                     Puma concolor - Yurimena, Vereda Menegua
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3b166c052a593b8e4b7054b8ae17f68 = L.circleMarker(
+                [3.770915, -72.462949],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f3b166c052a593b8e4b7054b8ae17f68.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Yatiribo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b1dc1bf90ea333a55ef1da684aac318 = L.circleMarker(
+                [3.824689, -72.542453],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_7b1dc1bf90ea333a55ef1da684aac318.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda El Prado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4bcefa41ef6d586a6541b21298ed182 = L.circleMarker(
+                [4.119642, -72.688989],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_a4bcefa41ef6d586a6541b21298ed182.bindTooltip(
+                `<div>
+                     Puma concolor - La Ema, Hacienda Caracoli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4cba10243c04e2acb1aeb3d678697662 = L.circleMarker(
+                [4.006405, -72.903459],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4cba10243c04e2acb1aeb3d678697662.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Santo Domingo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b34405e6896e01c6b0ec2f49045c5ecc = L.circleMarker(
+                [4.119642, -72.688989],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b34405e6896e01c6b0ec2f49045c5ecc.bindTooltip(
+                `<div>
+                     Puma concolor - La Ema, Hacienda Caracoli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1d4b15ba482e5baf78afbce5f979cc8 = L.circleMarker(
+                [4.119344, -72.685758],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f1d4b15ba482e5baf78afbce5f979cc8.bindTooltip(
+                `<div>
+                     Puma concolor - La Ema, Hacienda El Olivar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e981cd3ee5f2952d6f5ba3cd05a2740 = L.circleMarker(
+                [4.002314, -72.863238],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_0e981cd3ee5f2952d6f5ba3cd05a2740.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Finca Palmarito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_100335369b73b3848a1f1c365366084f = L.circleMarker(
+                [4.135643, -72.695397],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_100335369b73b3848a1f1c365366084f.bindTooltip(
+                `<div>
+                     Puma concolor - La Ema, Hacienda La Reseda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd7b7f993ad96995968f1ea90104cd92 = L.circleMarker(
+                [4.141169, -72.239896],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_fd7b7f993ad96995968f1ea90104cd92.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda Macarali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5e70f5f283e22bc17c31715ef057b77 = L.circleMarker(
+                [3.753132, -72.454877],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_d5e70f5f283e22bc17c31715ef057b77.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Palmarito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec3b32906051c22a285b6ea564651d61 = L.circleMarker(
+                [3.901279, -72.5722],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_ec3b32906051c22a285b6ea564651d61.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda La Cristalina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c113bb9a835cd694ca2378b1394596cb = L.circleMarker(
+                [3.86043, -72.761695],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_c113bb9a835cd694ca2378b1394596cb.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda La Guayacana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3677fb17ae162201db3ce3cab3d3a31f = L.circleMarker(
+                [3.770982, -72.489078],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_3677fb17ae162201db3ce3cab3d3a31f.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda La Lucha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e2068e6df3b564a7bd45eee711fc8ac = L.circleMarker(
+                [4.025083, -72.885802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_0e2068e6df3b564a7bd45eee711fc8ac.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Finca Las Acacias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_359fae713ae055eadeae44c4a036407c = L.circleMarker(
+                [3.753872, -72.430061],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_359fae713ae055eadeae44c4a036407c.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Villa del rio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7ab17990aae72e1a699773eae4dd31f = L.circleMarker(
+                [3.824689, -72.542453],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_c7ab17990aae72e1a699773eae4dd31f.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda El Prado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17c2d0650dd08302e13d2b9857eafac4 = L.circleMarker(
+                [4.055913, -72.946071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_17c2d0650dd08302e13d2b9857eafac4.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Erlindo Romana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39f31caf993aa130594586f747c4e31e = L.circleMarker(
+                [3.776775, -72.495017],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_39f31caf993aa130594586f747c4e31e.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Rancho Grande
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2155a101bdffac506fed15b220c5250c = L.circleMarker(
+                [3.802852, -72.672365],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_2155a101bdffac506fed15b220c5250c.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Itoco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82ec579609df0aca5cfe9675025eabf9 = L.circleMarker(
+                [3.828699, -72.720595],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_82ec579609df0aca5cfe9675025eabf9.bindTooltip(
+                `<div>
+                     Puma concolor - La Bodega, Hacienda El Castillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8391ed0f50914284d42eb02ba14c229a = L.circleMarker(
+                [4.592994, -71.621656],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8391ed0f50914284d42eb02ba14c229a.bindTooltip(
+                `<div>
+                     Puma concolor - San Pedro de Arimena, Hacienda Israel Bermúdez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76f7c91b9e9b96f8b1c1bf0c677ff4e9 = L.circleMarker(
+                [4.610093, -71.498947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_76f7c91b9e9b96f8b1c1bf0c677ff4e9.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda Matapalito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f430025877324af2fa358ff075785e4d = L.circleMarker(
+                [3.563484, -71.752629],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f430025877324af2fa358ff075785e4d.bindTooltip(
+                `<div>
+                     Puma concolor - Alto Tillaba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45743edd4b185bc79f4d2b94f6ad8073 = L.circleMarker(
+                [3.606216, -73.88747],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_45743edd4b185bc79f4d2b94f6ad8073.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8acb492b490a89d90f5c9483f690e3f6 = L.circleMarker(
+                [4.610093, -71.498947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8acb492b490a89d90f5c9483f690e3f6.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda Matapalito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7da9df67d506139abce6a2e939a748fd = L.circleMarker(
+                [4.517226, -71.388946],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_7da9df67d506139abce6a2e939a748fd.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda Chenevo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_336a8adbd5c4676fac99c588f7b804db = L.circleMarker(
+                [4.535381, -71.499409],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_336a8adbd5c4676fac99c588f7b804db.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda Guaramaco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5b14cc4e2279df1df5d1066a5a0fb03 = L.circleMarker(
+                [4.578634, -71.646235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_c5b14cc4e2279df1df5d1066a5a0fb03.bindTooltip(
+                `<div>
+                     Puma concolor - San Pedro de Arimena, Hacienda La Guardia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a38a2cf863264860de2b910cb66dd88 = L.circleMarker(
+                [3.608438, -73.884262],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4a38a2cf863264860de2b910cb66dd88.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2184e50651dd8df575505d1a1f8edc3 = L.circleMarker(
+                [3.628979, -73.876378],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b2184e50651dd8df575505d1a1f8edc3.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22cad990bf7c145685f10d1a538ce34e = L.circleMarker(
+                [3.563484, -71.752629],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_22cad990bf7c145685f10d1a538ce34e.bindTooltip(
+                `<div>
+                     Puma concolor - Alto Tillaba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e8b7553a5a7ee6bd851d6bb1295be61 = L.circleMarker(
+                [3.634763, -71.761631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_5e8b7553a5a7ee6bd851d6bb1295be61.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Mosco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdfb87da885467b3d5e0521fa9f29708 = L.circleMarker(
+                [3.607218, -73.892762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_fdfb87da885467b3d5e0521fa9f29708.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59998a64609719a7e7bcb1ec129a9e2a = L.circleMarker(
+                [3.619492, -73.892549],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_59998a64609719a7e7bcb1ec129a9e2a.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4bed16b78798ee0ec1e0b3ef2d67c07 = L.circleMarker(
+                [4.610093, -71.498947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b4bed16b78798ee0ec1e0b3ef2d67c07.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda Matapalito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0aea7dbeaf561c929940e50b358de01d = L.circleMarker(
+                [3.634763, -71.761631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_0aea7dbeaf561c929940e50b358de01d.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto Mosco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62d7012b7e09246e1e28748056fb31bc = L.circleMarker(
+                [4.009246, -72.911617],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_62d7012b7e09246e1e28748056fb31bc.bindTooltip(
+                `<div>
+                     Puma concolor - Navajas, Santo Domingo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b25e7dc5ab6d9c8810323a6475cbf60 = L.circleMarker(
+                [4.135297, -72.289803],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_2b25e7dc5ab6d9c8810323a6475cbf60.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda La Lorena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5dfd1568f77f853bb3ef75bc2d6e6d22 = L.circleMarker(
+                [4.19061, -72.33676],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_5dfd1568f77f853bb3ef75bc2d6e6d22.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda El Safari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc30457216a66be07688fefdca7cb425 = L.circleMarker(
+                [3.736891, -72.399549],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_dc30457216a66be07688fefdca7cb425.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Candelaria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6b1e8ea97af74941f3e036205874929 = L.circleMarker(
+                [4.208177, -72.347124],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b6b1e8ea97af74941f3e036205874929.bindTooltip(
+                `<div>
+                     Puma concolor - La Leona, Hacienda Safari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29fdee39e9408fa4a5afe88745b4aff5 = L.circleMarker(
+                [3.76627, -72.49745],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_29fdee39e9408fa4a5afe88745b4aff5.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Garibay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfbf9634dcd42b271535c525275484a1 = L.circleMarker(
+                [3.895549, -72.754402],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_bfbf9634dcd42b271535c525275484a1.bindTooltip(
+                `<div>
+                     Puma concolor - Melúa, Hacienda Monterrey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e297699d2b4e8cd8511da1b6c30f1c5 = L.circleMarker(
+                [3.560771, -71.447016],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8e297699d2b4e8cd8511da1b6c30f1c5.bindTooltip(
+                `<div>
+                     Puma concolor - Carranguero, Escuela Carranguero
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0cd2d68d19c6a6660237ed7515afb503 = L.circleMarker(
+                [3.772599, -72.482325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_0cd2d68d19c6a6660237ed7515afb503.bindTooltip(
+                `<div>
+                     Puma concolor - El Tropezon, Hacienda Yarumito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_571caa599f5cd61a08dc65487dd53443 = L.circleMarker(
+                [4.119642, -72.688989],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_571caa599f5cd61a08dc65487dd53443.bindTooltip(
+                `<div>
+                     Puma concolor - La Ema, Hacienda Caracoli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_173906dd6bbc4ad736afbb958e3ac6b1 = L.circleMarker(
+                [4.373403, -71.942883],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_173906dd6bbc4ad736afbb958e3ac6b1.bindTooltip(
+                `<div>
+                     Puma concolor - Wacoyo, Comunidad Walovo 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74c5654b8dfd90e431e751db4024ce2b = L.circleMarker(
+                [3.645929, -73.91263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_74c5654b8dfd90e431e751db4024ce2b.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda El Retiro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8cafa28fd86164a8cc6aa20004e854a5 = L.circleMarker(
+                [3.621519, -73.900875],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8cafa28fd86164a8cc6aa20004e854a5.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42950e45f40fa92d3880868e2a9f524a = L.circleMarker(
+                [4.369577, -72.04922],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_42950e45f40fa92d3880868e2a9f524a.bindTooltip(
+                `<div>
+                     Puma concolor - Neblinas, Hacienda Las Delicias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_70048506e7c2ccebba1151d41b7971e7 = L.circleMarker(
+                [4.731276, -71.402006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_70048506e7c2ccebba1151d41b7971e7.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda El Porvenir
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f92c78e7f67a67654e4a013be8e6f63f = L.circleMarker(
+                [3.485469, -71.373363],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_f92c78e7f67a67654e4a013be8e6f63f.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto trujillo, Puerto Trujillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9510df77ed99c56e8c34b2fc3bf74c2d = L.circleMarker(
+                [4.610093, -71.498947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_9510df77ed99c56e8c34b2fc3bf74c2d.bindTooltip(
+                `<div>
+                     Puma concolor - Puente Arimena, Hacienda Matapalito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b52578121b073a196f2c6a04b80e6c9 = L.circleMarker(
+                [3.621519, -73.900875],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_8b52578121b073a196f2c6a04b80e6c9.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fa3b6266a77b7171a8fb8b47304f524 = L.circleMarker(
+                [3.621519, -73.900875],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_3fa3b6266a77b7171a8fb8b47304f524.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02f55db7233ff1bbdb9269e8b85f52e1 = L.circleMarker(
+                [3.563484, -71.752629],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_02f55db7233ff1bbdb9269e8b85f52e1.bindTooltip(
+                `<div>
+                     Puma concolor - Alto Tillaba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9d87c6eb59fc9baf9e24403eb9cf734 = L.circleMarker(
+                [3.623849, -73.912954],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_b9d87c6eb59fc9baf9e24403eb9cf734.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5120a45e76b8d513397009ce0216fd88 = L.circleMarker(
+                [3.554069, -71.52892],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_5120a45e76b8d513397009ce0216fd88.bindTooltip(
+                `<div>
+                     Puma concolor - Carranguero, Resguardo Alto Tigre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac2ca14e177a8975698f422e3fa5bdda = L.circleMarker(
+                [3.756763, -72.280793],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_ac2ca14e177a8975698f422e3fa5bdda.bindTooltip(
+                `<div>
+                     Puma concolor - Carranguero, Resguardo El Tigre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4304ae44e08ac91c0d7047ebb4ea1ac0 = L.circleMarker(
+                [3.485469, -71.373363],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_4304ae44e08ac91c0d7047ebb4ea1ac0.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto trujillo, Puerto Trujillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7982cf429c763f23bd7ea86bb66795d8 = L.circleMarker(
+                [3.546199, -72.284665],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_7982cf429c763f23bd7ea86bb66795d8.bindTooltip(
+                `<div>
+                     Puma concolor - El Tigre, Hacienda El Toruno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6263f32ee3b907f1ecbe8bea446ec1e3 = L.circleMarker(
+                [3.485469, -71.373363],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_6263f32ee3b907f1ecbe8bea446ec1e3.bindTooltip(
+                `<div>
+                     Puma concolor - Puerto trujillo, Puerto Trujillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d17c5f95816a1a9982ef35dc662dfceb = L.circleMarker(
+                [3.595526, -73.903724],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            circle_marker_d17c5f95816a1a9982ef35dc662dfceb.bindTooltip(
+                `<div>
+                     Puma concolor - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a32612db19ed98d7ceeb588a5c6b170 = L.marker(
+                [3.69696, -73.153653],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_a1964e305fcc5a116d974c3b0365783d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6a32612db19ed98d7ceeb588a5c6b170.bindTooltip(
+                `<div>
+                     Panthera onca - Brisas del Camoa, Hacienda Santa Teresa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a32612db19ed98d7ceeb588a5c6b170.setIcon(icon_a1964e305fcc5a116d974c3b0365783d);
+            
+    
+            var marker_81cb3d49bca314d8258acfed9934ef31 = L.marker(
+                [3.537326, -72.440003],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_8f81aa1e8f6c91ce45d1f73237396868 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_81cb3d49bca314d8258acfed9934ef31.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto Castro, Hato Palmeras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_81cb3d49bca314d8258acfed9934ef31.setIcon(icon_8f81aa1e8f6c91ce45d1f73237396868);
+            
+    
+            var marker_5b6be1525c02802c0d5facbe82aa31c3 = L.marker(
+                [3.570986, -73.457907],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_c21892432b83999c688c9adf62ccecbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5b6be1525c02802c0d5facbe82aa31c3.bindTooltip(
+                `<div>
+                     Panthera onca - La Novilla, Hacienda Pampas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b6be1525c02802c0d5facbe82aa31c3.setIcon(icon_c21892432b83999c688c9adf62ccecbf);
+            
+    
+            var marker_f6b32589dcb0e9dd1c50d31e51769078 = L.marker(
+                [3.537326, -72.440003],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_062df48232b1a97fd0178e01089f4015 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f6b32589dcb0e9dd1c50d31e51769078.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto Castro, Hato Palmeras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6b32589dcb0e9dd1c50d31e51769078.setIcon(icon_062df48232b1a97fd0178e01089f4015);
+            
+    
+            var marker_bc8b0210cf075689c73ab13b8f1771d2 = L.marker(
+                [4.017353, -72.945979],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_c689ffff7457b615b617277ff68ad822 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bc8b0210cf075689c73ab13b8f1771d2.bindTooltip(
+                `<div>
+                     Panthera onca - Navajas, Santo Domingo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc8b0210cf075689c73ab13b8f1771d2.setIcon(icon_c689ffff7457b615b617277ff68ad822);
+            
+    
+            var marker_1f130c054f42105b4a1fc034931ed64b = L.marker(
+                [3.824689, -72.542453],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_c4bba2308115376c17d810be4ca00043 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1f130c054f42105b4a1fc034931ed64b.bindTooltip(
+                `<div>
+                     Panthera onca - Melúa, Hacienda El Prado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f130c054f42105b4a1fc034931ed64b.setIcon(icon_c4bba2308115376c17d810be4ca00043);
+            
+    
+            var marker_4ce6514972586babb3e401a5aebcbe6f = L.marker(
+                [4.03722, -72.162993],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_2a8fab48585baeb96673a203f5f60f5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4ce6514972586babb3e401a5aebcbe6f.bindTooltip(
+                `<div>
+                     Panthera onca - Serranía, Hacienda Mururito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ce6514972586babb3e401a5aebcbe6f.setIcon(icon_2a8fab48585baeb96673a203f5f60f5a);
+            
+    
+            var marker_536d8b2defc6099d6ff89e00f5f75b9d = L.marker(
+                [4.15745, -73.699844],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_77bba80eb7b74843e92e1549f6521ab7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_536d8b2defc6099d6ff89e00f5f75b9d.bindTooltip(
+                `<div>
+                     Panthera onca - Buenavista, Finca Marcos Garcia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_536d8b2defc6099d6ff89e00f5f75b9d.setIcon(icon_77bba80eb7b74843e92e1549f6521ab7);
+            
+    
+            var marker_8573cf9390852e33bce99eb0c4b7741e = L.marker(
+                [4.167199, -73.69354],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_646a465d4022436e2a2bd645cf554bdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8573cf9390852e33bce99eb0c4b7741e.bindTooltip(
+                `<div>
+                     Panthera onca - Buenavista, Hacienda Rosalinda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8573cf9390852e33bce99eb0c4b7741e.setIcon(icon_646a465d4022436e2a2bd645cf554bdc);
+            
+    
+            var marker_b9dce614da3fc2c3a995f274001281d4 = L.marker(
+                [3.531515, -73.402054],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_0613b70f4becfee1fbe245e5d908882e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b9dce614da3fc2c3a995f274001281d4.bindTooltip(
+                `<div>
+                     Panthera onca - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b9dce614da3fc2c3a995f274001281d4.setIcon(icon_0613b70f4becfee1fbe245e5d908882e);
+            
+    
+            var marker_e07209bc74f79ae6196741834784aa5f = L.marker(
+                [3.531515, -73.402054],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_e9d52a1e671c64e11013939f23dbaacc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e07209bc74f79ae6196741834784aa5f.bindTooltip(
+                `<div>
+                     Panthera onca - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e07209bc74f79ae6196741834784aa5f.setIcon(icon_e9d52a1e671c64e11013939f23dbaacc);
+            
+    
+            var marker_4a9de7b30f51c96d2ec9254bb850bfad = L.marker(
+                [3.810341, -72.608264],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_7d08809579af0c262907bb054cdb05d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4a9de7b30f51c96d2ec9254bb850bfad.bindTooltip(
+                `<div>
+                     Panthera onca - Serranía, Hacienda Santa Rita
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a9de7b30f51c96d2ec9254bb850bfad.setIcon(icon_7d08809579af0c262907bb054cdb05d1);
+            
+    
+            var marker_32aba425421c7645c7ba2f555d03f157 = L.marker(
+                [4.09235, -72.803689],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_75dd0502bf05d26b0506b6d49d5f9bc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_32aba425421c7645c7ba2f555d03f157.bindTooltip(
+                `<div>
+                     Panthera onca - Yurimena, Hacienda Bufalito
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32aba425421c7645c7ba2f555d03f157.setIcon(icon_75dd0502bf05d26b0506b6d49d5f9bc5);
+            
+    
+            var marker_dedfa912f679267e41dc4658973d3f27 = L.marker(
+                [3.531515, -73.402054],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_1e39fbf518d9f66d60860b670ccd4d8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dedfa912f679267e41dc4658973d3f27.bindTooltip(
+                `<div>
+                     Panthera onca - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dedfa912f679267e41dc4658973d3f27.setIcon(icon_1e39fbf518d9f66d60860b670ccd4d8a);
+            
+    
+            var marker_58be65618434d166d0b2405ae5531672 = L.marker(
+                [3.841915, -72.63201],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_6becf956c5830ff0f33a4970cf5e18a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_58be65618434d166d0b2405ae5531672.bindTooltip(
+                `<div>
+                     Panthera onca - Melúa, Hacienda Las Camelias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_58be65618434d166d0b2405ae5531672.setIcon(icon_6becf956c5830ff0f33a4970cf5e18a8);
+            
+    
+            var marker_1946ec5023e4c0c7104f0e13913fbe4f = L.marker(
+                [4.198196, -72.445877],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_b591d490fb1040b0971b63c4a7da3b9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1946ec5023e4c0c7104f0e13913fbe4f.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda Sandrita
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1946ec5023e4c0c7104f0e13913fbe4f.setIcon(icon_b591d490fb1040b0971b63c4a7da3b9a);
+            
+    
+            var marker_223d03ac17ba196cb910e96fd2ad48cb = L.marker(
+                [4.190973, -72.431705],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_c6f839a4cc7cb654f51604c891d870e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_223d03ac17ba196cb910e96fd2ad48cb.bindTooltip(
+                `<div>
+                     Panthera onca - La Sandrita, Hacienda Berali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_223d03ac17ba196cb910e96fd2ad48cb.setIcon(icon_c6f839a4cc7cb654f51604c891d870e8);
+            
+    
+            var marker_f0368c6d75f32235dee4b0b44e3bc567 = L.marker(
+                [3.899235, -71.931156],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_a01782d338285bbf5ca226cc70329b1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f0368c6d75f32235dee4b0b44e3bc567.bindTooltip(
+                `<div>
+                     Panthera onca - Mururuy, Hacienda El Triunfo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0368c6d75f32235dee4b0b44e3bc567.setIcon(icon_a01782d338285bbf5ca226cc70329b1e);
+            
+    
+            var marker_658e8e4d61f8782ae2a253163b3df3be = L.marker(
+                [3.621519, -73.900875],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_aea8a902764e6a2f2a07a9b4dab13e50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_658e8e4d61f8782ae2a253163b3df3be.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_658e8e4d61f8782ae2a253163b3df3be.setIcon(icon_aea8a902764e6a2f2a07a9b4dab13e50);
+            
+    
+            var marker_394281d6e6b1760cc5fd766c04786ea2 = L.marker(
+                [3.634763, -71.761631],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_d938887603873f5da530864dad791a8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_394281d6e6b1760cc5fd766c04786ea2.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto Mosco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_394281d6e6b1760cc5fd766c04786ea2.setIcon(icon_d938887603873f5da530864dad791a8a);
+            
+    
+            var marker_896bbe4061610f972551b5e130e0f501 = L.marker(
+                [3.485469, -71.373363],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_3513d7bf523de0673cd849f8c74db190 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_896bbe4061610f972551b5e130e0f501.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto trujillo, Puerto Trujillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_896bbe4061610f972551b5e130e0f501.setIcon(icon_3513d7bf523de0673cd849f8c74db190);
+            
+    
+            var marker_50e7379e32aa29f566afc0766e1927ea = L.marker(
+                [3.485469, -71.373363],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_396ecc7ab71aba08231411a82f78f44e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_50e7379e32aa29f566afc0766e1927ea.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto trujillo, Puerto Trujillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50e7379e32aa29f566afc0766e1927ea.setIcon(icon_396ecc7ab71aba08231411a82f78f44e);
+            
+    
+            var marker_1a15a7bfa5e4fa0840a09bda831c9c21 = L.marker(
+                [3.615064, -73.89639],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_c46da0b2ed84f0cdb6667e05ff0ac470 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1a15a7bfa5e4fa0840a09bda831c9c21.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a15a7bfa5e4fa0840a09bda831c9c21.setIcon(icon_c46da0b2ed84f0cdb6667e05ff0ac470);
+            
+    
+            var marker_12bc60f714d7015da880d64af73ceb67 = L.marker(
+                [3.899235, -71.931156],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_46ecbe1788b4a1b3f53d9da9ffb779f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_12bc60f714d7015da880d64af73ceb67.bindTooltip(
+                `<div>
+                     Panthera onca - Mururuy, Hacienda El Triunfo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12bc60f714d7015da880d64af73ceb67.setIcon(icon_46ecbe1788b4a1b3f53d9da9ffb779f2);
+            
+    
+            var marker_6a47be3f389bccce36c9bcf40a3990d3 = L.marker(
+                [3.634763, -71.761631],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_e19b6073e38a0a14a680d67410eb55d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6a47be3f389bccce36c9bcf40a3990d3.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto Mosco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a47be3f389bccce36c9bcf40a3990d3.setIcon(icon_e19b6073e38a0a14a680d67410eb55d1);
+            
+    
+            var marker_81246c7e049783ad812c998c3b441dfc = L.marker(
+                [4.563219, -71.655472],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_f144166016985159287726dce9c12ad7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_81246c7e049783ad812c998c3b441dfc.bindTooltip(
+                `<div>
+                     Panthera onca - San Pedro de Arimena, Hacienda San Sebastian
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_81246c7e049783ad812c998c3b441dfc.setIcon(icon_f144166016985159287726dce9c12ad7);
+            
+    
+            var marker_ec1f5d4501042f0c2538014bb83e4933 = L.marker(
+                [3.621519, -73.900875],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_fce6565088f8207bea25579ff91715b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ec1f5d4501042f0c2538014bb83e4933.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec1f5d4501042f0c2538014bb83e4933.setIcon(icon_fce6565088f8207bea25579ff91715b6);
+            
+    
+            var marker_56f004d8c62c45abe755fc5cf9888404 = L.marker(
+                [3.485469, -71.373363],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_427ae1fd541df4e769219014ee22be9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_56f004d8c62c45abe755fc5cf9888404.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto trujillo, Puerto Trujillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56f004d8c62c45abe755fc5cf9888404.setIcon(icon_427ae1fd541df4e769219014ee22be9a);
+            
+    
+            var marker_8b1f0393f123a4e5562750dd2e78fe92 = L.marker(
+                [4.592994, -71.621656],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_59771c81f4a2fcae85fb64aae42d6faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8b1f0393f123a4e5562750dd2e78fe92.bindTooltip(
+                `<div>
+                     Panthera onca - San Pedro de Arimena, Hacienda Israel Bermúdez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b1f0393f123a4e5562750dd2e78fe92.setIcon(icon_59771c81f4a2fcae85fb64aae42d6faf);
+            
+    
+            var marker_b4124a331d30a3414ac3a8fdc9087f0b = L.marker(
+                [3.624423, -73.149157],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_1e939c45aa0fb784b05dc17365371acb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b4124a331d30a3414ac3a8fdc9087f0b.bindTooltip(
+                `<div>
+                     Panthera onca - El Consuelo, Hacienda Nazareth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4124a331d30a3414ac3a8fdc9087f0b.setIcon(icon_1e939c45aa0fb784b05dc17365371acb);
+            
+    
+            var marker_187280b60b5b4aed0d7bba7b3968de44 = L.marker(
+                [3.679461, -73.637869],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_200cdd3a4413e01fe4d917d37d3a0fea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_187280b60b5b4aed0d7bba7b3968de44.bindTooltip(
+                `<div>
+                     Panthera onca - La Unión, Hacienda San Camilo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_187280b60b5b4aed0d7bba7b3968de44.setIcon(icon_200cdd3a4413e01fe4d917d37d3a0fea);
+            
+    
+            var marker_a2b816ff7a91c24eebc6ba34c57665fb = L.marker(
+                [3.536348, -73.425311],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_616e2a0ea2d65ae83683adb1efb82108 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a2b816ff7a91c24eebc6ba34c57665fb.bindTooltip(
+                `<div>
+                     Panthera onca - San Francisco, Hacienda Rey Zamuro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a2b816ff7a91c24eebc6ba34c57665fb.setIcon(icon_616e2a0ea2d65ae83683adb1efb82108);
+            
+    
+            var marker_31252c83f7022b7f930e78fa709237a2 = L.marker(
+                [3.433742, -72.942968],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_b8a68b6b2b2002234795bfd39760c21f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_31252c83f7022b7f930e78fa709237a2.bindTooltip(
+                `<div>
+                     Panthera onca - Brisas de Manacacias, Hato Samanes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31252c83f7022b7f930e78fa709237a2.setIcon(icon_b8a68b6b2b2002234795bfd39760c21f);
+            
+    
+            var marker_dc4b9d65cc61c862814b8cbb73eb2a64 = L.marker(
+                [3.531515, -73.402054],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_61f45118288fec826a714d3ae893bbd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dc4b9d65cc61c862814b8cbb73eb2a64.bindTooltip(
+                `<div>
+                     Panthera onca - San Francisco, Hacienda Matarredonda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dc4b9d65cc61c862814b8cbb73eb2a64.setIcon(icon_61f45118288fec826a714d3ae893bbd5);
+            
+    
+            var marker_3297680d3d71521d8b15865980c5a6f0 = L.marker(
+                [3.50019, -72.450278],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_746556006763bae97dbe93ae58b51848 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3297680d3d71521d8b15865980c5a6f0.bindTooltip(
+                `<div>
+                     Panthera onca - Siberia, Hacienda Siberia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3297680d3d71521d8b15865980c5a6f0.setIcon(icon_746556006763bae97dbe93ae58b51848);
+            
+    
+            var marker_ccc0327f02250480ca1c5797cf361c04 = L.marker(
+                [3.369002, -72.627905],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_3daa2e1e3f18ba4dc939f181f2c93e09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ccc0327f02250480ca1c5797cf361c04.bindTooltip(
+                `<div>
+                     Panthera onca - Siberia, Hacienda La Esperanza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ccc0327f02250480ca1c5797cf361c04.setIcon(icon_3daa2e1e3f18ba4dc939f181f2c93e09);
+            
+    
+            var marker_904cd32e4dc74251af342c4bf448c221 = L.marker(
+                [3.452407, -72.511963],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_cfbb4e125ce3a0be723c14066b8dd0fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_904cd32e4dc74251af342c4bf448c221.bindTooltip(
+                `<div>
+                     Panthera onca - Siberia, Hacienda Sibira
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_904cd32e4dc74251af342c4bf448c221.setIcon(icon_cfbb4e125ce3a0be723c14066b8dd0fe);
+            
+    
+            var marker_9cefbe1d271aaa4c80bdd32e0e110230 = L.marker(
+                [4.190973, -72.431705],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_d2bff7f6272060bc97668508c21c3e44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9cefbe1d271aaa4c80bdd32e0e110230.bindTooltip(
+                `<div>
+                     Panthera onca - La Sandrita, Hacienda Berali
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9cefbe1d271aaa4c80bdd32e0e110230.setIcon(icon_d2bff7f6272060bc97668508c21c3e44);
+            
+    
+            var marker_b8e38ae5661ef27d8ebabefff472d1b7 = L.marker(
+                [3.824689, -72.542453],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_dcb15c032a5975a58d27af2cfb7234f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b8e38ae5661ef27d8ebabefff472d1b7.bindTooltip(
+                `<div>
+                     Panthera onca - Melúa, Hacienda El Prado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b8e38ae5661ef27d8ebabefff472d1b7.setIcon(icon_dcb15c032a5975a58d27af2cfb7234f3);
+            
+    
+            var marker_a7967547a878c924371a00ee71216414 = L.marker(
+                [4.032437, -72.936596],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_0cb5df846e955f8fc7b9dff8dcd5ec6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a7967547a878c924371a00ee71216414.bindTooltip(
+                `<div>
+                     Panthera onca - Navajas, Rancho Chileno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7967547a878c924371a00ee71216414.setIcon(icon_0cb5df846e955f8fc7b9dff8dcd5ec6f);
+            
+    
+            var marker_66aff10eafd51c6dfb06577a2cce3b79 = L.marker(
+                [3.858002, -72.504239],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_a746f19cf1582fca2c4029b4f42abca7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_66aff10eafd51c6dfb06577a2cce3b79.bindTooltip(
+                `<div>
+                     Panthera onca - Melúa, Caño Los Cuatro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_66aff10eafd51c6dfb06577a2cce3b79.setIcon(icon_a746f19cf1582fca2c4029b4f42abca7);
+            
+    
+            var marker_11b884635d38f2a7adc1926c0038473c = L.marker(
+                [3.820359, -72.977099],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_49caf3bb1fff32112d83b578c2bcd4a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_11b884635d38f2a7adc1926c0038473c.bindTooltip(
+                `<div>
+                     Panthera onca - Melúa, Hacienda La Voragine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11b884635d38f2a7adc1926c0038473c.setIcon(icon_49caf3bb1fff32112d83b578c2bcd4a8);
+            
+    
+            var marker_64b4482e23678260b60de058b5f850f4 = L.marker(
+                [4.578634, -71.646235],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_8283d7f61b73c18086e3963a12c6288c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_64b4482e23678260b60de058b5f850f4.bindTooltip(
+                `<div>
+                     Panthera onca - San Pedro de Arimena, Hacienda La Guardia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_64b4482e23678260b60de058b5f850f4.setIcon(icon_8283d7f61b73c18086e3963a12c6288c);
+            
+    
+            var marker_e6147babbc348595e61f932fa1b70427 = L.marker(
+                [3.686575, -72.282084],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_5c4803fa3872adf694b34afc2031019f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e6147babbc348595e61f932fa1b70427.bindTooltip(
+                `<div>
+                     Panthera onca - El Tigre, Finca Luis Martinez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6147babbc348595e61f932fa1b70427.setIcon(icon_5c4803fa3872adf694b34afc2031019f);
+            
+    
+            var marker_1acb9aa7e39a6c3e1db8273f399c1fe4 = L.marker(
+                [3.563484, -71.752629],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_d5e5478f7fe738ad74f95cd70c2d941c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1acb9aa7e39a6c3e1db8273f399c1fe4.bindTooltip(
+                `<div>
+                     Panthera onca - Alto Tillaba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1acb9aa7e39a6c3e1db8273f399c1fe4.setIcon(icon_d5e5478f7fe738ad74f95cd70c2d941c);
+            
+    
+            var marker_07d75f08e97e36eac753668aaaf8f2c7 = L.marker(
+                [3.485469, -71.373363],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_6f3e19c77d88fad57dfdbd15047ef1c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_07d75f08e97e36eac753668aaaf8f2c7.bindTooltip(
+                `<div>
+                     Panthera onca - Puerto trujillo, Puerto Trujillo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07d75f08e97e36eac753668aaaf8f2c7.setIcon(icon_6f3e19c77d88fad57dfdbd15047ef1c5);
+            
+    
+            var marker_efb5ac29b40e8e4ec773523005dabf32 = L.marker(
+                [4.606237, -71.620804],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_2f573443ff732ee8d288578e854cecc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_efb5ac29b40e8e4ec773523005dabf32.bindTooltip(
+                `<div>
+                     Panthera onca - San Pedro de Arimena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_efb5ac29b40e8e4ec773523005dabf32.setIcon(icon_2f573443ff732ee8d288578e854cecc8);
+            
+    
+            var marker_a0133eee0e75df854eb3873ee44ef45e = L.marker(
+                [3.619492, -73.892549],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_3a0c666321da601ac55a6f09276a0aaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a0133eee0e75df854eb3873ee44ef45e.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a0133eee0e75df854eb3873ee44ef45e.setIcon(icon_3a0c666321da601ac55a6f09276a0aaa);
+            
+    
+            var marker_6148d0065c602bb8c933de1266e3f4a1 = L.marker(
+                [3.563484, -71.752629],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_ab1656b98a16c09b97859002582eaf2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6148d0065c602bb8c933de1266e3f4a1.bindTooltip(
+                `<div>
+                     Panthera onca - Alto Tillaba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6148d0065c602bb8c933de1266e3f4a1.setIcon(icon_ab1656b98a16c09b97859002582eaf2f);
+            
+    
+            var marker_5fe1d9464fcf6ccd3ce4586cba85473d = L.marker(
+                [3.608438, -73.884262],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_f4f0585ecc6f1972a5ffb2ee0e82719e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5fe1d9464fcf6ccd3ce4586cba85473d.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fe1d9464fcf6ccd3ce4586cba85473d.setIcon(icon_f4f0585ecc6f1972a5ffb2ee0e82719e);
+            
+    
+            var marker_c94b1d7b13cdee976b0bda2bb569dd01 = L.marker(
+                [4.606237, -71.620804],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_4875709875b495972b96d6d97ea0a0a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c94b1d7b13cdee976b0bda2bb569dd01.bindTooltip(
+                `<div>
+                     Panthera onca - Puente Arimena, Vereda San Pedro de Arimena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c94b1d7b13cdee976b0bda2bb569dd01.setIcon(icon_4875709875b495972b96d6d97ea0a0a9);
+            
+    
+            var marker_df857492b8b9d8f3d1d61e34c05dba67 = L.marker(
+                [3.756763, -72.280793],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_be6106c45fe112dce95108e23a540620 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_df857492b8b9d8f3d1d61e34c05dba67.bindTooltip(
+                `<div>
+                     Panthera onca - Carranguero, Resguardo El Tigre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df857492b8b9d8f3d1d61e34c05dba67.setIcon(icon_be6106c45fe112dce95108e23a540620);
+            
+    
+            var marker_9f33825cc93e547a4c1e0ece9274b7a1 = L.marker(
+                [3.560771, -71.447016],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_4cb3cdeca215fcd50abccd38a046c85a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9f33825cc93e547a4c1e0ece9274b7a1.bindTooltip(
+                `<div>
+                     Panthera onca - Carranguero, Escuela Carranguero
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f33825cc93e547a4c1e0ece9274b7a1.setIcon(icon_4cb3cdeca215fcd50abccd38a046c85a);
+            
+    
+            var marker_8df7a0526df199c94a4ddb6f48ac2dc5 = L.marker(
+                [4.280748, -72.316827],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_bd4d3c352ccbeeb8cfc7bae415d61e62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8df7a0526df199c94a4ddb6f48ac2dc5.bindTooltip(
+                `<div>
+                     Panthera onca - La Leona, Hacienda Jubenal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8df7a0526df199c94a4ddb6f48ac2dc5.setIcon(icon_bd4d3c352ccbeeb8cfc7bae415d61e62);
+            
+    
+            var marker_7c359d38b26fd6925c796cd5565c937d = L.marker(
+                [3.554069, -71.52892],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_1c03b33b76bc78833daef6a64e6d7b22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7c359d38b26fd6925c796cd5565c937d.bindTooltip(
+                `<div>
+                     Panthera onca - Carranguero, Resguardo Alto Tigre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c359d38b26fd6925c796cd5565c937d.setIcon(icon_1c03b33b76bc78833daef6a64e6d7b22);
+            
+    
+            var marker_a4de4f563d25be514b405d9502a10688 = L.marker(
+                [3.554069, -71.52892],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_255e3ab7f15004107b1cd1b68b45c8f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a4de4f563d25be514b405d9502a10688.bindTooltip(
+                `<div>
+                     Panthera onca - Carranguero, Resguardo Alto Tigre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4de4f563d25be514b405d9502a10688.setIcon(icon_255e3ab7f15004107b1cd1b68b45c8f2);
+            
+    
+            var marker_69bfab776403a33d76bcebb01a20e078 = L.marker(
+                [3.623849, -73.912954],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_98292030f4446b563ee5e0653346b8dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_69bfab776403a33d76bcebb01a20e078.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69bfab776403a33d76bcebb01a20e078.setIcon(icon_98292030f4446b563ee5e0653346b8dd);
+            
+    
+            var marker_f0258c24ee4218199c1b4548137c0505 = L.marker(
+                [3.563484, -71.752629],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_a3cc6746bf28b2fb783ca3675e209486 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f0258c24ee4218199c1b4548137c0505.bindTooltip(
+                `<div>
+                     Panthera onca - Alto Tillaba
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0258c24ee4218199c1b4548137c0505.setIcon(icon_a3cc6746bf28b2fb783ca3675e209486);
+            
+    
+            var marker_a12ae27ae2a5d71e5b38c124e864245b = L.marker(
+                [3.607218, -73.892762],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_d92a94ece47c11175210a80c1b76526e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a12ae27ae2a5d71e5b38c124e864245b.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a12ae27ae2a5d71e5b38c124e864245b.setIcon(icon_d92a94ece47c11175210a80c1b76526e);
+            
+    
+            var marker_774ef577ee26cafb3601c3993d16c9c3 = L.marker(
+                [3.606216, -73.88747],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_472e7a3e87982dc1c0f95fad56619220 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_774ef577ee26cafb3601c3993d16c9c3.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda La Cima
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_774ef577ee26cafb3601c3993d16c9c3.setIcon(icon_472e7a3e87982dc1c0f95fad56619220);
+            
+    
+            var marker_7f91f7a3796d030054286604ac8a52c8 = L.marker(
+                [3.645929, -73.91263],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_8e7a847ac66d76bc0954f62c677fc3e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7f91f7a3796d030054286604ac8a52c8.bindTooltip(
+                `<div>
+                     Panthera onca - Vereda El Retiro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7f91f7a3796d030054286604ac8a52c8.setIcon(icon_8e7a847ac66d76bc0954f62c677fc3e0);
+            
+    
+            var marker_c45dfe17116b61fc3fe68c98c4dc1ebc = L.marker(
+                [3.554069, -71.52892],
+                {
+}
+            ).addTo(map_3029924113fa1377c1685f1a9e28c1ad);
+        
+    
+            var icon_37cdd9ef14146285906361a790f6dd81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c45dfe17116b61fc3fe68c98c4dc1ebc.bindTooltip(
+                `<div>
+                     Panthera onca - Carranguero, Resguardo Alto Tigre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c45dfe17116b61fc3fe68c98c4dc1ebc.setIcon(icon_37cdd9ef14146285906361a790f6dd81);
+            
+</script>
+</html>
