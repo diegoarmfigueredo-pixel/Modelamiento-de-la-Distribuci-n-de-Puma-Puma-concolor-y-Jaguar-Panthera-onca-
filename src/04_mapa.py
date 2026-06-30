@@ -2,120 +2,86 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
+
+# ── Cargar modelo final y su scaler correspondiente ─────────────────────────
 with open('data/processed/modelo_rf.pkl', 'rb') as f:
     modelo = pickle.load(f)
-felinos = pd.read_csv('C:\\Users\\diego\\Desktop\\Maestria\\Aprendizaje automatico\Proyecto Puma-Jaguar\\data\\processed\\felinos_limpio.csv')
 
-df = pd.read_csv(r"C:\\Users\\diego\\Desktop\\Maestria\\Aprendizaje automatico\Proyecto Puma-Jaguar\\data\\processed\\felinos_limpio.csv")
-print("Dimensiones del Dataframe para el mapa: ", df.shape)
-print("Columnas del Dataframe: ", df.columns.tolist())
+with open('data/processed/scaler_final.pkl', 'rb') as f:
+    scaler_final = pickle.load(f)
 
-#Crear una grilla de latitud y longitud, para visualizar la distribución espacial de los felinos, esto es útil para el analisis de SDM posteriormente.
-#Coordenadas máximas y mínimas de latitud y longitud, para establecer los límites del área de estudio, y para realizar análisis espaciales posteriormente.
-lat_min = df['decimalLatitude'].min()
-lat_max = df['decimalLatitude'].max()
-lon_min = df['decimalLongitude'].min()
-lon_max = df['decimalLongitude'].max()
-print("Latitud mínima: ", lat_min)
-print("Latitud máxima: ", lat_max)  
-print("Longitud mínima: ", lon_min)
-print("Longitud máxima: ", lon_max)
+felinos = pd.read_csv('data/processed/felinos_limpio.csv')
+print("Dimensiones del Dataframe para el mapa: ", felinos.shape)
 
-#Crear el arreglo de la grilla con np.arange
-lats = np.arange(lat_min, lat_max, 0.02) # 0.02 es el paso de la grilla, se puede ajustar según la resolución deseada
+# ── Límites del área de estudio ──────────────────────────────────────────────
+lat_min = felinos['decimalLatitude'].min()
+lat_max = felinos['decimalLatitude'].max()
+lon_min = felinos['decimalLongitude'].min()
+lon_max = felinos['decimalLongitude'].max()
+
+# ── Crear grilla ─────────────────────────────────────────────────────────────
+lats = np.arange(lat_min, lat_max, 0.02)
 lons = np.arange(lon_min, lon_max, 0.02)
-print("Número de latitudes en la grilla: ", len(lats))
-print("Número de longitudes en la grilla: ", len(lons))
-
-#Aplanar grilla con .ravel() para crear un arreglo de coordenadas, esto es útil para el analisis de SDM posteriormente.pues elimina redundancia y evita sobreentrenamiento de modelo
 lon_grid, lat_grid = np.meshgrid(lons, lats)
-lon_grid_flat = lon_grid.ravel()    
+lon_grid_flat = lon_grid.ravel()
 lat_grid_flat = lat_grid.ravel()
 print("Número de puntos en la grilla: ", len(lon_grid_flat))
 
-#Crear df_grilla con las dos columnas seleccionadas ( decimalLatitude, decimalLongitud), para tener un dataframe limpio para el analisis de SDM posteriormente.
 df_grilla = pd.DataFrame({
-    'decimalLatitude': lat_grid_flat,   
+    'decimalLatitude': lat_grid_flat,
     'decimalLongitude': lon_grid_flat
 })
-print("Dimensiones del Dataframe de la grilla: ", df_grilla.shape)
-print("Columnas del Dataframe de la grilla: ", df_grilla.columns.tolist())  
 
+# ── ESCALAR la grilla con el MISMO scaler usado para entrenar el modelo ────
+# Antes: df_grilla_valores = df_grilla.values (sin escalar) — esto ya no aplica
+# porque el modelo ahora espera datos en la misma escala con la que se entrenó.
+df_grilla_scaled = scaler_final.transform(df_grilla[['decimalLatitude', 'decimalLongitude']])
 
-#Agrergar nombre de columas
-df_grilla_valores = df_grilla.values  # convierte a numpy sin nombres
-
-
-#Predecir modelo
-# predict_proba toma las características de la grilla y devuelve las probabilidades 
-# de predicción para cada clase (presencia y ausencia). Se selecciona la columna [:, 1]
-# que corresponde a la clase positiva (presencia) — todas las filas (:) y segunda columna (1).
-probabilidades = modelo.predict_proba(df_grilla_valores)[:, 1]
-
-# Visualizar
-# Para visualizar, se debe convertir el vector de probabilidades a grilla de nuevo.
-# reshape hace lo contrario de ravel — toma un vector unidimensional y lo convierte 
-# en una matriz con la misma forma que lat_grid y lon_grid.
+# ── Predecir probabilidades ──────────────────────────────────────────────────
+probabilidades = modelo.predict_proba(df_grilla_scaled)[:, 1]
 prob_grid = probabilidades.reshape(lat_grid.shape)
-print("Dimensiones de prob_grid: ", prob_grid.shape)
 
 print("Min probabilidad:", probabilidades.min())
 print("Max probabilidad:", probabilidades.max())
-print("Primeros 10 valores:", probabilidades[:10])
 
-#Rangos de grilla
-print("Grilla lat min/max:", df_grilla['decimalLatitude'].min(), df_grilla['decimalLatitude'].max())
-print("Train lat min/max:", felinos['decimalLatitude'].min(), felinos['decimalLatitude'].max())
-
-
-
-#Visualizar el mapa de probabilidades con plt.imshow, que muestra la grilla de probabilidades como una imagen, donde cada píxel representa la probabilidad de presencia de los felinos en esa ubicación geográfica. Se utiliza el cmap 'viridis' para asignar colores a las diferentes probabilidades, y se agrega una barra de color para interpretar los valores de probabilidad.
-
-# Visualizar el mapa de distribución
-#Cargar de nuevo jaguar y puma
+# ── Visualizar: mapa de calor de probabilidad + puntos de presencia ────────
 puma = felinos[felinos['species'] == 'Puma concolor']
 jaguar = felinos[felinos['species'] == 'Panthera onca']
 
+fig, ax = plt.subplots(figsize=(13, 9))
 
+# Mapa de calor de probabilidad de presencia
+heat = ax.contourf(lon_grid, lat_grid, prob_grid, levels=20, cmap='YlOrRd', alpha=0.7)
+cbar = plt.colorbar(heat, ax=ax)
+cbar.set_label('Probabilidad de presencia (Random Forest)', fontsize=10)
 
-plt.figure(figsize=(12, 8))
-plt.scatter(puma['decimalLongitude'], puma['decimalLatitude'],
-            c='blue', marker='o', s=80, label='Puma concolor (152)', 
-            alpha=0.7, edgecolors='darkblue')
-plt.scatter(jaguar['decimalLongitude'], jaguar['decimalLatitude'],
-            c='red', marker='*', s=150, label='Panthera onca (60)', 
-            alpha=0.7, edgecolors='darkred')
-plt.title('Distribución de felinos - Llanos Orientales, Colombia 2011')
-plt.xlabel('Longitud')
-plt.ylabel('Latitud')
-plt.legend()
-# Mostrar solo localidades únicas sin repetir
-localidades_vistas = set()
-for _, row in felinos.iterrows():
-    loc = row['locality'].split(',')[0].strip()  # toma solo la primera parte
-    if loc not in localidades_vistas:
-        plt.annotate(loc,
-                    xy=(row['decimalLongitude'], row['decimalLatitude']),
-                    fontsize=6, alpha=0.7,
-                    xytext=(3, 3), textcoords='offset points')
-        localidades_vistas.add(loc)
-plt.grid(True, alpha=0.3)
-plt.savefig('outputs/mapa_distribucion.png', dpi=150)
+# Puntos de presencia real
+ax.scatter(puma['decimalLongitude'], puma['decimalLatitude'],
+           c='blue', marker='o', s=60, label=f'Puma concolor ({len(puma)})',
+           alpha=0.8, edgecolors='darkblue', zorder=5)
+ax.scatter(jaguar['decimalLongitude'], jaguar['decimalLatitude'],
+           c='black', marker='*', s=130, label=f'Panthera onca ({len(jaguar)})',
+           alpha=0.9, edgecolors='white', zorder=5)
+
+ax.set_title('Distribución potencial — Modelo final Random Forest (reentrenado 100% datos)\n'
+             'Llanos Orientales, Colombia 2011',
+             fontsize=13, fontweight='bold')
+ax.set_xlabel('Longitud')
+ax.set_ylabel('Latitud')
+ax.legend(loc='upper left', fontsize=9)
+ax.grid(True, alpha=0.2)
+
+plt.tight_layout()
+plt.savefig('outputs/mapa_distribucion_potencial_final.png', dpi=150, bbox_inches='tight')
 plt.show()
+print("Guardado: outputs/mapa_distribucion_potencial_final.png")
 
-
-
-# Calcular el solapamiento de las especies ( tener importado numpy as np)
-
-# Calcular solapamiento
-
-# Distancia mínima para considerar solapamiento (0.05 grados ~ 5km)
+# ── Solapamiento (se mantiene igual, no depende del modelo) ────────────────
 DISTANCIA = 0.05
-
 solapamiento = 0
 for _, j in jaguar.iterrows():
     for _, p in puma.iterrows():
-        dist = np.sqrt((j['decimalLatitude'] - p['decimalLatitude'])**2 + 
+        dist = np.sqrt((j['decimalLatitude'] - p['decimalLatitude'])**2 +
                        (j['decimalLongitude'] - p['decimalLongitude'])**2)
         if dist < DISTANCIA:
             solapamiento += 1
@@ -123,6 +89,3 @@ for _, j in jaguar.iterrows():
 
 pct = (solapamiento / len(jaguar)) * 100
 print(f"Jaguares con pumas cercanos: {solapamiento} de {len(jaguar)} ({pct:.1f}%)")
-
-
-
